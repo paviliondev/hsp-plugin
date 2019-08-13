@@ -1,0 +1,7 @@
+plugin:
+  hsp_homepage_categories:
+    type: category_list
+    default: ''
+  hsp_patreon_link:
+    default: ''
+    client: true

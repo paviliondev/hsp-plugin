@@ -1,0 +1,91 @@
+{{#unless currentUser}}
+<div class='signin'>
+  <p style="text-align:right;">
+    <a href="https://hsp.world/login"><img src="/plugins/hsp-plugin/images/signin.png"></a>
+  </p>
+</div>
+{{/unless}}
+
+<div class='logo'>
+  <p style="text-align:center;">
+    <a href="https://hsp.world/"><img src="/plugins/hsp-plugin/images/hsplogo.png"></a>
+  </p>
+</div>
+
+<div class='socialmedia'>
+  <p style="text-align:center;">
+    <a href="https://www.facebook.com/HighlySensitivePersonWorld">
+      <img src="/plugins/hsp-plugin/images/facebook.png">
+    </a>
+    <a href="https://twitter.com/@HSP_World">
+      <img src="/plugins/hsp-plugin/images/twitter.png">
+    </a>
+    <a href="https://blog.hsp.world/">
+      <img src="/plugins/hsp-plugin/images/wordpress.png">
+    </a>
+  </p>
+</div>
+
+<div class="subtitle">
+  {{#if currentUser}}
+    <div class="subtext">
+      {{i18n "hsp.pledge_and_join"}}
+    </div>
+    {{homepage-pledge_signedin}}
+  {{else}}
+    <div class="subtext">
+      {{i18n "hsp.introduction"}}
+    </div>
+  {{/if}}
+</div>
+
+<div class="homepage-categories">
+  {{#if currentUser}}
+    {{#each model as |category|}}
+      {{homepage-category category=category
+                          showLogin="showLogin"}}
+    {{/each}}
+  {{else}}
+    {{#each firstCategories as |category|}}
+      {{homepage-category category=category
+                          showLogin="showLogin"}}
+    {{/each}}
+    
+    <div class="between-categories">
+        <div class="subtext">
+          {{i18n "hsp.pledge_and_join"}}
+        </div>
+      {{homepage-pledge_signedout}}
+    </div>
+    
+    {{#each secondCategories as |category|}}
+      {{homepage-category category=category
+                          showLogin="showLogin"}}
+    {{/each}}
+  {{/if}}
+</div>
+
+<div class='signup'>
+{{#unless currentUser}}
+  <div class="subtext">
+    {{i18n "hsp.sign_up"}}
+  </div>
+  <!-- insert sign up button here -->
+  <div class='signupbutton'>
+  <p style="text-align:center;">
+    <a href="https://hsp.world/login"><img src="/plugins/hsp-plugin/images/signup.png"></a>
+  </p>
+</div>
+{{/unless}}
+</div>
+
+<div class='footer'>
+  <p style="text-align:center;">
+    <font size="1">
+      Copyright &#169; 2019 HSP World | 
+      <a href="https://blog.hsp.world/">Blog</a> | 
+      <a href="https://hsp.world/tos">Terms of Service</a>| 
+      <a href="https://hsp.world/privacy">Privacy Policy</a> 
+    </font>
+  </p>
+</div>

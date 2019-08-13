@@ -118,6 +118,6 @@ export default {
       }
 
       return true;
-    }
+    };
   }
 };
