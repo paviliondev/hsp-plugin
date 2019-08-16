@@ -36,7 +36,7 @@ after_initialize do
     has_one :uploaded_logo, embed: :object, serializer: CategoryUploadSerializer
 
     def has_access
-      scope.current_user && scope.can_see_category?(object)
+      scope.can_see_category?(object)
     end
   end
 end

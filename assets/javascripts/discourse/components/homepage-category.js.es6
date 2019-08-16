@@ -7,14 +7,14 @@ export default Ember.Component.extend({
     const currentUser = this.get('currentUser');
     const category = this.get('category');
 
-    if (currentUser) {
-      if (category.has_access) {
-        DiscourseURL.routeTo('/c/' + category.slug);
-      } else {
-        DiscourseURL.routeTo(Discourse.SiteSettings.hsp_patreon_link);
-      }
+    if (category.has_access) {
+      DiscourseURL.routeTo('/c/' + category.slug);
     } else {
-      this.sendAction('showLogin');
+      if (currentUser) {
+        DiscourseURL.routeTo(Discourse.SiteSettings.hsp_patreon_link);
+      } else {
+        this.sendAction('showLogin');
+      }
     }
   }
 });
