@@ -20,7 +20,7 @@ export default Ember.Component.extend({
       if ((category.slug === 'private' || category.slug === 'pro') && currentUser.groups.length) {
         let userPatreonGroup = currentUser.groups.find(g => patreonGroups.indexOf(g.name) > -1);
         if (userPatreonGroup) {
-          slug = userPatreonGroup.name.dasherize();
+          slug = 'hsp-community/' + userPatreonGroup.name.replace(/_/g, '').toLowerCase();
         }
       }
 
