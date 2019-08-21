@@ -27,7 +27,7 @@ export default Ember.Component.extend({
       DiscourseURL.routeTo('/c/' + slug);
     } else {
       if (currentUser) {
-        DiscourseURL.routeTo(Discourse.SiteSettings.hsp_patreon_link);
+        window.open(Discourse.SiteSettings.hsp_patreon_link, "_blank");
       } else {
         this.sendAction('showLogin');
       }
