@@ -2,8 +2,19 @@ en:
   js:
     hsp:
       introduction: |
-        Together we're creating a private, calm, fun, unbiased, visually appealing,
-        ad-free, easy-to-use, mobile-friendly place for Highly Sensitives.
+        HSP World is for people who have the Highly Sensitive Person (HSP) Trait. 
+        We're about spreading awareness and providing HSPs with helpful information. 
+        You don't need to sign up or pay a fee to use the Library, News Feed or Products 
+        areas, they're free.
+        
+        The HSP Library is filled with resources HSPs can browse, the HSP News Feed is 
+        updated daily and the HSP Products area is filled with products HSPs may find
+        find useful and helpful.  Feel free to use the Search Bar if you looking for 
+        something specific.
+        
+        Fifteen to 20% of the population have the Trait, not sure if you do?
+        Click here to <a href="https://hsperson.com/test/highly-sensitive-test/" 
+        target="_blank">take the self-test</a>.
       pledge_and_join: |
         Have fun creating HSP World together with us - Pledge and join one of the following; 
         Super Sprouts, Stunning Seedlings, Spectacular Saplings, or Terrific Trees  
