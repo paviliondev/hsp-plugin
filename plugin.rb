@@ -25,7 +25,7 @@ after_initialize do
     end
   end
 
-  class ::HomepageCategorySerializer < ApplicationSerializer
+  class ::HomepageCategorySerializer < ::ApplicationSerializer
     attributes :id,
                :name,
                :slug,
