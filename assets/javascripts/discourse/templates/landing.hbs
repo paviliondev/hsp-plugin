@@ -1,18 +1,23 @@
 <div class="subtitle">
   {{#if currentUser}}
+  <div class="subtext">
    <p>
      If you find these free HSP Resources helpful please support us by donating. We
-     appreciate and <b>thank</b> you for your support. 
+     appreciate and <b>thank you</b> for your support. 
    </p>
+   </div>
    {{homepage-donate}}
   {{else}}
     <div class="subtext">
         <p>
-        <b>HSP World</b> is for people who have the Highly Sensitive Person (HSP) Trait. We’re about spreading awareness and providing HSPs with helpful information. 
+        <b>HSP World</b> is for people who have the Highly Sensitive Person (HSP) Trait. 
         </p><p>
-        You don’t need to Sign Up or pay a fee to use the Library, News Feed, or Products & Services areas. To access the Community you can <b>Sign Up</b>.
+          We’re about growing awareness of the HSP Trait and providing HSPs with helpful information. 
         </p><p>
-        The <b>HSP Library</b> is filled with resources HSPs can browse, the <b>HSP News Feed</b> is updated daily and the <b>HSP Products & Services</b> area is filled with products HSPs may find find useful and helpful. Feel free to use the Search Bar if you’re looking for something specific.
+        You don’t need to Sign Up or pay a fee to browse the Library, News Feed,
+        Products & Services areas or to Sign Up and join the Community. 
+        </p><p>
+        The <b>HSP Library</b> is filled with resources HSPs can check out (videos, podcast, books, etc.), the <b>HSP News Feed</b> is updated daily and the <b>HSP Products & Services</b> area is filled with products HSPs may find useful and helpful. 
         </p><p>
         15 - 20% of the population have the Trait, not sure if you do?
         Click here to <a href="https://hsperson.com/test/highly-sensitive-test/" 
@@ -37,12 +42,10 @@
     <div class="between-categories">
         <div class="subtext">
           <p>
-         We’re excited and committed to continue building a place just for HSPs and we plan on offering places In HSP World for HSPs to connect; in one or more <b>Private Groups</b> and in the <b>Professionals Only</b> area.
-          </p><p>
-          If you’re interested in being involved we’d love to invite you to join us. Click the Pledge and Join button.
+         Support our growing Library, News Feed and Products areas by donating. We appreciate and <b>thank you</b> for your support. 
           </p>
         </div>
-      {{homepage-pledge_signedout}}
+      {{homepage-donate}}
     </div>
     
     {{#each secondCategories as |category|}}
@@ -50,6 +53,23 @@
                           showLogin="showLogin"}}
     {{/each}}
   {{/if}}
+  
+  <div class="after-categories">
+    <div class="subtext">
+      <p>
+We’re excited and committed to continue playing and building a place just for
+HSPs.
+</p><p>
+We’re working on offering places In HSP World for HSPs to connect; in the
+<b>Services</b> area, in one or more <b>Private Groups</b>, and in the <b>Professionals Only</b> area.
+</p><p>
+If you’re interested in getting involved we invite you to join us. Click the button to
+Become a Patron. 
+      </p>
+    </div>
+    {{homepage-pledge}}
+    </div>
+
 </div>
 
 <div class='footer'>
