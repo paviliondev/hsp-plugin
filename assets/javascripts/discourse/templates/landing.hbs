@@ -6,7 +6,11 @@
      appreciate and <b>thank you</b> for your support. 
    </p>
    </div>
+   {{if site.mobileView}}
+    {{homepage-donate-mobile}}
+   {{else}} 
    {{homepage-donate}}
+   {{/if}} 
   {{else}}
     <div class="subtext">
         <p>
@@ -45,7 +49,11 @@
          Support our growing Library, News Feed and Products areas by donating. We appreciate and <b>thank you</b> for your support. 
           </p>
         </div>
-      {{homepage-donate}}
+      {{if site.mobileView}}
+    {{homepage-donate-mobile}}
+   {{else}} 
+   {{homepage-donate}}
+   {{/if}} 
     </div>
     
     {{#each secondCategories as |category|}}
@@ -67,7 +75,11 @@ If you’re interested in getting involved we invite you to join us. Click the b
 Become a Patron. 
       </p>
     </div>
+    {{if site.mobileView}}
+    {{homepage-pledge-mobile}}
+    {{else}} 
     {{homepage-pledge}}
+    {{/if}} 
     </div>
 
 </div>
