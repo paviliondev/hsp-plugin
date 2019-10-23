@@ -1,9 +1,10 @@
 <div class="subtitle">
   {{#if currentUser}}
-  <div class="subtext">
+  <div class="subtextcenter">
    <p>
-     If you find these free HSP Resources helpful please support us by donating. We
-     appreciate and <b>thank you</b> for your support. 
+     If you find these free HSP Resources helpful please support us by donating. 
+     </p><p>
+    We appreciate and <b>thank you</b> for your support. 
    </p>
    </div>
    {{#if site.mobileView}}
@@ -79,7 +80,25 @@ Become a Patron.
   {{/if}}
   
   <div class="after-categories">
-
+{{#if currentUser}}
+     <div class="subtext">
+      <p>
+We’re excited and committed to continue playing and building a place just for
+HSPs.
+</p><p>
+We’re working on offering places In HSP World for HSPs to connect; in the
+<b>Services</b> area, in one or more <b>Private Groups</b>, and in the <b>Professionals Only</b> area.
+</p><p>
+If you’re interested in getting involved we invite you to join us. Click the button to
+Become a Patron. 
+      </p>
+    </div>
+    {{#if site.mobileView}}
+    {{homepage-pledge-mobile}}
+    {{else}} 
+    {{homepage-pledge}}
+    {{/if}} 
+{{/if}}
     </div>
 
 </div>
